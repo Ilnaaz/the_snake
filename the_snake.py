@@ -39,7 +39,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), 0, 32)
 screen.fill(BOARD_BACKGROUND_COLOR)
 
 # Заголовок окна игрового поля:
-pygame.display.set_caption(f'Змейка - 1')
+pygame.display.set_caption('Змейка - 1')
 
 # Настройка времени:
 clock = pygame.time.Clock()
@@ -250,6 +250,7 @@ def handle_keys(game_object: Snake):
                 game_object.next_direction = LEFT
             elif event.key == pygame.K_RIGHT and game_object.direction != LEFT:
                 game_object.next_direction = RIGHT
+
 
 def update_title(max_length, length=1):
     max_length = max(max_length, length)
