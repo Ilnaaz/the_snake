@@ -254,6 +254,7 @@ def handle_keys(game_object: Snake):
 
 # Функция обработки действий пользователя
 def update_title(max_length, length=1):
+    """123"""
     max_length = max(max_length, length)
     pygame.display.set_caption(f'Змейка - {max_length}')
     return max_length
